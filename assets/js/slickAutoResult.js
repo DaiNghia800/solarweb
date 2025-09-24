@@ -24,6 +24,14 @@
     dots: true,
     infinite: true,
     speed: 500,
-    cssEase: 'linear'
+    cssEase: 'linear',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false
+        }
+      }
+    ]
   });
 });
