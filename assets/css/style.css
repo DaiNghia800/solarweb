@@ -551,6 +551,21 @@ h3.question {
   font-weight: 400;
   text-decoration: none;
   line-height: 1;
+  position: relative;
+}
+.list-nav .item a::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background: #5065A5;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+.list-nav .item a:hover::before {
+  width: 100%;
 }
 .list-nav .item::after {
   content: '';
